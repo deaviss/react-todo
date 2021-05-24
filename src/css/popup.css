@@ -1,0 +1,32 @@
+.popup {
+  position: absolute;
+  display: block;
+  transition: 0.3s all;
+  background: #9e0000;
+  border-radius: 10px;
+  padding: 8px;
+  width: 90%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #eee;
+  animation-name: rotate;
+  animation-duration: 3.3s;
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+}
+@keyframes rotate {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

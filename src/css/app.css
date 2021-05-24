@@ -1,0 +1,96 @@
+.App {
+  width: 900px;
+  height: 80vh;
+  max-height: 100vh;
+  background-color: #eee;
+  border-radius: 2%;
+  padding: 30px;
+  min-width: 350px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.App * {
+  margin: 5px 0px;
+}
+.App::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+.newTodoBox {
+  display: flex;
+  justify-content: space-between;
+}
+.newTodoInput,
+.todoButton {
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+}
+.newTodoInput {
+  width: 100%;
+  border: 1px solid #989898;
+  background-color: #eee;
+}
+.newTodoInput::placeholder {
+  color: #AEAEAE;
+}
+.todoButton {
+  background: #BB65FF;
+  color: #eee;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 7px;
+}
+.todo-box {
+  margin-top: 14px;
+  cursor: pointer;
+  display: flex;
+}
+.todo-bg {
+  transition: 0.2s all;
+}
+.todo-bg:hover {
+  box-shadow: 4px 6px 9px #7a7a7a;
+}
+.todo-text {
+  word-break: break-all;
+}
+.infos {
+  font-size: 2rem;
+}
+@media (max-width: 1200px) {
+  .App {
+    width: 800px;
+  }
+  .todo-text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 840px) {
+  .App {
+    width: 88vw;
+    padding: 20px;
+  }
+  .newTodoInput,
+  .todo-text {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 450px) {
+  .App {
+    width: 88vw;
+  }
+  .newTodoInput,
+  .todo-text,
+  .todoButton {
+    font-size: 1rem;
+  }
+  .todoButton {
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+}
